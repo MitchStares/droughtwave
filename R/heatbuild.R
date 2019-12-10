@@ -3,6 +3,8 @@
 #
 # Heatbuild Function ----
 
+## Add a station argument or fix the reliance on it.
+
 heatbuild.fun <- function(df, temp_col, date_col, t = 39, days_before=5, days_after=5){
   temp_col <- deparse(substitute(temp_col)) #grab the non-string column names from function and parse them into strings
   date_col_string <- deparse(substitute(date_col))
